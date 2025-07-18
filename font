@@ -1,0 +1,19 @@
+// Estoque inicial
+let estoque = 5;
+
+// Lê a operação e a quantidade
+let operacao = parseInt(gets());
+let quantidade = parseInt(gets());
+
+// Executa a operação
+if (operacao === 1) {
+  estoque += quantidade;
+  print(estoque);
+} else if (operacao === 2) {
+  if (quantidade <= estoque) {
+    estoque -= quantidade;
+    print(estoque);
+  } else {
+    print("Estoque insuficiente");
+  }
+}
